@@ -1,0 +1,13 @@
+Metric,Value
+Selected Model,Mean Baseline
+Training Records,6480
+Validation Records,720
+Test Records,720
+Validation MAE,1.791397342249657
+Validation RMSE,2.0771663037634522
+Validation R2,-0.007014245730241786
+Test MAE,1.9111056755829907
+Test RMSE,2.173849708300708
+Test R2,-0.006594776557422133
+Train R2,0.0
+Train Validation R2 Gap,0.007014245730241786

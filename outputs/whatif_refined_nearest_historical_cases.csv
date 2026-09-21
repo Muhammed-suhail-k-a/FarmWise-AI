@@ -1,0 +1,11 @@
+Record_ID,State,District,Year,Season,Crop_Type,Rainfall_mm,Avg_Temperature_C,Humidity_percent,Soil_Type,Irrigation_Type,Fertilizer_Used_kg,Pesticide_Used_kg,Cultivated_Area_hectares,Yield_ton_per_hectare,Market_Price_per_ton,Farmer_Profit_INR,Scenario_Distance
+1700,Punjab,Bathinda,2016,Kharif,Rice,1034.1,32.3,59.8,Black,Tube Well,249.37,33.48,1454.58,6.4,33789.04,167480.0,1.047479910708486
+7389,Punjab,Ludhiana,2024,Kharif,Rice,1323.85,29.6,47.6,Laterite,Tube Well,98.75,21.38,4118.41,4.71,55808.37,264249.0,1.2085759671600143
+5260,Punjab,Patiala,2021,Kharif,Rice,1646.48,33.7,48.9,Sandy,Drip,99.77,10.33,3022.58,7.14,29628.93,341616.0,1.3991311040586398
+4508,Punjab,Ludhiana,2020,Kharif,Rice,1301.84,34.8,39.3,Alluvial,Tube Well,221.77,34.73,2501.57,7.62,18068.51,332510.0,1.4270974330216826
+2373,Punjab,Amritsar,2017,Kharif,Rice,1131.5,36.4,54.8,Black,Rain-fed,267.44,8.83,2118.13,6.26,25759.95,224296.0,1.5268323300576936
+1654,Punjab,Amritsar,2016,Kharif,Rice,1463.26,32.7,88.3,Black,Drip,171.0,34.85,2513.93,4.35,45604.51,178197.0,1.6546285924304216
+5984,Punjab,Patiala,2022,Kharif,Rice,1040.33,35.1,45.5,Sandy,Tube Well,288.41,38.31,2578.67,1.92,49352.44,40772.0,1.6821453517661216
+3110,Punjab,Patiala,2018,Kharif,Rice,2180.58,29.8,53.5,Black,Tube Well,138.09,37.72,2501.36,6.5,56574.25,171634.0,1.8653072435871283
+5224,Punjab,Ludhiana,2021,Kharif,Rice,2007.0,36.1,78.1,Alluvial,Canal,309.21,29.88,783.02,8.1,52266.47,87187.0,1.976390653303624
+5250,Punjab,Amritsar,2021,Kharif,Rice,1705.82,37.7,88.5,Red,Sprinkler,128.24,31.86,1703.28,2.27,43767.77,55476.0,1.9766241679913374

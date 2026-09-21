@@ -1,0 +1,19 @@
+Metric,Value
+Crop,Rice
+State,Punjab
+Season,Kharif
+Baseline Fertilizer (kg),214.07999999999998
+Scenario Fertilizer (kg),214.07
+Baseline Pesticide (kg),36.364999999999995
+Scenario Pesticide (kg),36.36
+Baseline Yield (ton/ha),4.85
+Scenario Yield (ton/ha),4.85
+Baseline Production (ton),12162.5875
+Scenario Production (ton),12162.5875
+Baseline Revenue (INR),418355427.60462505
+Scenario Revenue (INR),418355427.60462505
+Baseline Profit (INR),169557.0
+Scenario Profit (INR),169557.0
+Baseline Climate Score,0
+Scenario Climate Score,0
+Yield Assumption Source,Historical median reference for selected crop/state/season

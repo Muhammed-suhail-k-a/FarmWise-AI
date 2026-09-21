@@ -1,0 +1,141 @@
+{
+  "step": "10C.4",
+  "name": "Production Advisory Validation",
+  "timestamp": "2026-09-20T10:20:01.860798+00:00",
+  "overall_valid": true,
+  "status": "PASS",
+  "hard_failures": [],
+  "metrics": {
+    "evidence_count": 5,
+    "source_count": 5,
+    "chunk_count": 5,
+    "claim_count": 0,
+    "unsupported_claim_count": 0
+  },
+  "validation_checks": {
+    "evidence_present": true,
+    "source_trace_valid": true,
+    "required_sections_valid": true,
+    "sources_section_present": true,
+    "no_dosage_prescription": true,
+    "no_treatment_prescription": true,
+    "no_prompt_leakage": true,
+    "claim_grounding_valid": true,
+    "limitations_present": true,
+    "risk_preservation": true
+  },
+  "claim_validation": [],
+  "source_trace": [
+    {
+      "chunk_id": "FACT004_CHUNK001",
+      "pest_id": "P002",
+      "topic": "Damage symptoms",
+      "source_id": "SRC002",
+      "citation": "TNAU Crop Protection — Brown plant hopper.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html",
+      "similarity": 0.7454268932342529
+    },
+    {
+      "chunk_id": "FACT006_CHUNK001",
+      "pest_id": "P003",
+      "topic": "Damage symptoms",
+      "source_id": "SRC003",
+      "citation": "TNAU Crop Protection — White backed plant hopper.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_WBPH.html",
+      "similarity": 0.6972274780273438
+    },
+    {
+      "chunk_id": "FACT008_CHUNK001",
+      "pest_id": "P004",
+      "topic": "Damage symptoms",
+      "source_id": "SRC004",
+      "citation": "TNAU Crop Protection — Leaf folder.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_lf.html",
+      "similarity": 0.6480539441108704
+    },
+    {
+      "chunk_id": "FACT017_CHUNK001",
+      "pest_id": "P009",
+      "topic": "Damage symptoms",
+      "source_id": "SRC009",
+      "citation": "TNAU Crop Protection — Thrips.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_Thrips.html",
+      "similarity": 0.6166963577270508
+    },
+    {
+      "chunk_id": "FACT012_CHUNK001",
+      "pest_id": "P006",
+      "topic": "Damage symptoms",
+      "source_id": "SRC006",
+      "citation": "TNAU Crop Protection — Rice Hispa.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_ricehispa.html",
+      "similarity": 0.594973623752594
+    }
+  ],
+  "final_advisory": {
+    "question": "What symptoms can brown planthopper cause in rice?",
+    "generated_answer": "RISK ASSESSMENT\nKEY OBSERVATIONS\n- Symptoms caused by brown planthoppers (P002) include yellowing, browning, and drying (\"hopper burn\") at the base of rice plants.\n- Similar symptoms may also occur with white-backed planthoppers (P003), which cause reduced vigor, stunting, yellowing, and hopper-burn symptoms.\n- The rice leaf-folder (P004) causes folded or rolled rice leaves and scraped green tissues, leading to a whitish scorched appearance.\n- Rice thrips (P009) damage tender leaves by lacerating leaf tissue and sucking plant sap, resulting in yellowish or silvery streaks on young rice seedlings.\n- Rice Hispa adults scrape green tissue while grubs mine within the leaf tissue, causing white streaks or translucent patches.\n\nRECOMMENDED ACTIONS\n- Monitor for signs of these pests in rice fields.\n- Implement integrated pest management practices such as crop rotation, use of resistant varieties, and biological control methods.\n- Regularly inspect crops for any visible symptoms of these pests.\n\nWHAT TO AVOID\n- Do not apply pesticides indiscriminately without proper identification of the pest.\n- Avoid overuse of chemical treatments, as this can lead to resistance development and environmental harm.\n- Ensure that all recommended actions are taken based on accurate information about the specific pest affecting the rice crop.\n\nEVIDENCE LIMITATIONS\nThe provided evidence includes multiple sources discussing different pests affecting rice, but it does not specify which symptom corresponds to each pest. Therefore, it is essential to identify the exact pest causing the observed symptoms before taking appropriate action.",
+    "validation_status": "PASS",
+    "source_trace": [
+      {
+        "chunk_id": "FACT004_CHUNK001",
+        "pest_id": "P002",
+        "topic": "Damage symptoms",
+        "source_id": "SRC002",
+        "citation": "TNAU Crop Protection — Brown plant hopper.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html",
+        "similarity": 0.7454268932342529
+      },
+      {
+        "chunk_id": "FACT006_CHUNK001",
+        "pest_id": "P003",
+        "topic": "Damage symptoms",
+        "source_id": "SRC003",
+        "citation": "TNAU Crop Protection — White backed plant hopper.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_WBPH.html",
+        "similarity": 0.6972274780273438
+      },
+      {
+        "chunk_id": "FACT008_CHUNK001",
+        "pest_id": "P004",
+        "topic": "Damage symptoms",
+        "source_id": "SRC004",
+        "citation": "TNAU Crop Protection — Leaf folder.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_lf.html",
+        "similarity": 0.6480539441108704
+      },
+      {
+        "chunk_id": "FACT017_CHUNK001",
+        "pest_id": "P009",
+        "topic": "Damage symptoms",
+        "source_id": "SRC009",
+        "citation": "TNAU Crop Protection — Thrips.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_Thrips.html",
+        "similarity": 0.6166963577270508
+      },
+      {
+        "chunk_id": "FACT012_CHUNK001",
+        "pest_id": "P006",
+        "topic": "Damage symptoms",
+        "source_id": "SRC006",
+        "citation": "TNAU Crop Protection — Rice Hispa.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_ricehispa.html",
+        "similarity": 0.594973623752594
+      }
+    ],
+    "claim_validation": [],
+    "validation_checks": {
+      "evidence_present": true,
+      "source_trace_valid": true,
+      "required_sections_valid": true,
+      "sources_section_present": true,
+      "no_dosage_prescription": true,
+      "no_treatment_prescription": true,
+      "no_prompt_leakage": true,
+      "claim_grounding_valid": true,
+      "limitations_present": true,
+      "risk_preservation": true
+    },
+    "limitations": "The response is grounded in the verified retrieved knowledge base. Symptom information does not by itself confirm field infestation."
+  }
+}
