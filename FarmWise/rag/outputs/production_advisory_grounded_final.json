@@ -1,0 +1,127 @@
+{
+  "step": "10C.6",
+  "name": "Grounding-Aware Advisory Repair",
+  "timestamp": "2026-09-20T10:24:30.596749+00:00",
+  "question": "What symptoms can brown planthopper cause in rice?",
+  "overall_status": "REVIEW_REQUIRED",
+  "original_answer_length": 1631,
+  "final_answer_length": 1721,
+  "claims": {
+    "original_claim_count": 8,
+    "retained_claim_count": 6,
+    "removed_claim_count": 2,
+    "final_unsupported_claim_count": 0
+  },
+  "validation": {
+    "required_sections": "PASS",
+    "claim_grounding": "PASS",
+    "source_trace": "PASS",
+    "safety": "FAIL"
+  },
+  "removed_claims": [
+    {
+      "claim_id": "CLAIM_007",
+      "section": "recommended_actions",
+      "claim": "- Implement integrated pest management practices such as crop rotation, use of resistant varieties, and biological control methods.",
+      "best_overlap": 0.1538,
+      "reason": "Insufficient evidence support for production advisory."
+    },
+    {
+      "claim_id": "CLAIM_008",
+      "section": "recommended_actions",
+      "claim": "- Regularly inspect crops for any visible symptoms of these pests.",
+      "best_overlap": 0.1429,
+      "reason": "Insufficient evidence support for production advisory."
+    }
+  ],
+  "final_sections": {
+    "key_observations": [
+      "Symptoms caused by brown planthoppers (P002) include yellowing, browning, and drying (\"hopper burn\") at the base of rice plants.",
+      "Similar symptoms may also occur with white-backed planthoppers (P003), which cause reduced vigor, stunting, yellowing, and hopper-burn symptoms.",
+      "The rice leaf-folder (P004) causes folded or rolled rice leaves and scraped green tissues, leading to a whitish scorched appearance.",
+      "Rice thrips (P009) damage tender leaves by lacerating leaf tissue and sucking plant sap, resulting in yellowish or silvery streaks on young rice seedlings.",
+      "Rice Hispa adults scrape green tissue while grubs mine within the leaf tissue, causing white streaks or translucent patches."
+    ],
+    "recommended_actions": [
+      "Monitor for signs of these pests in rice fields."
+    ],
+    "what_to_avoid": [
+      "Do not treat the observed symptoms as a definitive pest diagnosis without confirming the pest."
+    ],
+    "risk_assessment": [
+      "The available evidence describes symptoms associated with brown planthopper and other rice pests. These symptoms should not be treated as a definitive field diagnosis without confirming the pest."
+    ],
+    "evidence_limitations": [
+      "The retrieved knowledge base contains verified identification and symptom information for rice pests. It does not provide sufficient evidence for pesticide dosage or specific treatment prescriptions. Similar symptoms may occur across different pests, so field identification should be confirmed before management decisions."
+    ]
+  },
+  "final_answer": "RISK ASSESSMENT\n\n- The available evidence describes symptoms associated with brown planthopper and other rice pests. These symptoms should not be treated as a definitive field diagnosis without confirming the pest.\n\nKEY OBSERVATIONS\n\n- Symptoms caused by brown planthoppers (P002) include yellowing, browning, and drying (\"hopper burn\") at the base of rice plants.\n- Similar symptoms may also occur with white-backed planthoppers (P003), which cause reduced vigor, stunting, yellowing, and hopper-burn symptoms.\n- The rice leaf-folder (P004) causes folded or rolled rice leaves and scraped green tissues, leading to a whitish scorched appearance.\n- Rice thrips (P009) damage tender leaves by lacerating leaf tissue and sucking plant sap, resulting in yellowish or silvery streaks on young rice seedlings.\n- Rice Hispa adults scrape green tissue while grubs mine within the leaf tissue, causing white streaks or translucent patches.\n\nRECOMMENDED ACTIONS\n\n- Monitor for signs of these pests in rice fields.\n\nWHAT TO AVOID\n\n- Do not treat the observed symptoms as a definitive pest diagnosis without confirming the pest.\n\nEVIDENCE LIMITATIONS\n\n- The retrieved knowledge base contains verified identification and symptom information for rice pests. It does not provide sufficient evidence for pesticide dosage or specific treatment prescriptions. Similar symptoms may occur across different pests, so field identification should be confirmed before management decisions.\n\nSOURCES\n\n- SRC002: TNAU Crop Protection — Brown plant hopper.\n- SRC003: TNAU Crop Protection — White backed plant hopper.\n- SRC004: TNAU Crop Protection — Leaf folder.\n- SRC009: TNAU Crop Protection — Thrips.\n- SRC006: TNAU Crop Protection — Rice Hispa.",
+  "source_trace": [
+    {
+      "chunk_id": "FACT004_CHUNK001",
+      "source_id": "SRC002",
+      "pest_id": "P002",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — Brown plant hopper.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html",
+      "similarity": 0.7454268932342529
+    },
+    {
+      "chunk_id": "FACT006_CHUNK001",
+      "source_id": "SRC003",
+      "pest_id": "P003",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — White backed plant hopper.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_WBPH.html",
+      "similarity": 0.6972274780273438
+    },
+    {
+      "chunk_id": "FACT008_CHUNK001",
+      "source_id": "SRC004",
+      "pest_id": "P004",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — Leaf folder.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_lf.html",
+      "similarity": 0.6480539441108704
+    },
+    {
+      "chunk_id": "FACT017_CHUNK001",
+      "source_id": "SRC009",
+      "pest_id": "P009",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — Thrips.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_Thrips.html",
+      "similarity": 0.6166963577270508
+    },
+    {
+      "chunk_id": "FACT012_CHUNK001",
+      "source_id": "SRC006",
+      "pest_id": "P006",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — Rice Hispa.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_ricehispa.html",
+      "similarity": 0.594973623752594
+    }
+  ],
+  "source_lines": [
+    "SRC002: TNAU Crop Protection — Brown plant hopper.",
+    "SRC003: TNAU Crop Protection — White backed plant hopper.",
+    "SRC004: TNAU Crop Protection — Leaf folder.",
+    "SRC009: TNAU Crop Protection — Thrips.",
+    "SRC006: TNAU Crop Protection — Rice Hispa."
+  ],
+  "safety": {
+    "pass": false,
+    "unsafe_matches": [
+      "\\bdosage\\b"
+    ]
+  },
+  "section_presence": {
+    "RISK ASSESSMENT": true,
+    "KEY OBSERVATIONS": true,
+    "RECOMMENDED ACTIONS": true,
+    "WHAT TO AVOID": true,
+    "EVIDENCE LIMITATIONS": true,
+    "SOURCES": true
+  }
+}

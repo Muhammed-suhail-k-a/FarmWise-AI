@@ -1,0 +1,15 @@
+{
+  "step": "10C.5",
+  "name": "True Claim-Level Grounding and Source Mapping",
+  "timestamp": "2026-09-20T10:21:59.826242+00:00",
+  "overall_status": "REVIEW_REQUIRED",
+  "total_claims": 8,
+  "supported_claims": 7,
+  "strongly_supported_claims": 6,
+  "unsupported_claims": 1,
+  "grounding_rate": 0.875,
+  "evidence_count": 5,
+  "source_count": 5,
+  "safety_pass": true,
+  "output_file": "/content/drive/MyDrive/suhail/project/FarmWise/rag/outputs/claim_level_grounding_validation.json"
+}

@@ -1,0 +1,11 @@
+Record_ID,State,District,Year,Season,Crop_Type,Rainfall_mm,Avg_Temperature_C,Humidity_percent,Soil_Type,Irrigation_Type,Fertilizer_Used_kg,Pesticide_Used_kg,Cultivated_Area_hectares,Yield_ton_per_hectare,Market_Price_per_ton,Farmer_Profit_INR,Scenario_Distance
+6449,West Bengal,Siliguri,2022,Zaid,Rice,1218.46,33.6,69.1,Alluvial,Canal,193.22,40.39,4838.27,4.09,23429.48,271653.0,0.707578593497326
+2249,Uttarakhand,Pauri,2017,Rabi,Rice,1159.65,36.0,58.4,Red,Rain-fed,204.2,35.7,3661.73,3.43,25182.65,208256.0,0.7225207421990768
+910,Punjab,Ludhiana,2015,Rabi,Rice,1500.5,32.6,68.5,Red,Rain-fed,234.26,28.14,3016.63,5.15,37206.95,210921.0,0.7583600416562515
+3222,Maharashtra,Aurangabad,2018,Kharif,Rice,1670.86,34.6,66.9,Black,Tube Well,214.17,31.46,3171.79,1.23,33135.8,33250.0,0.7857042182600603
+1700,Punjab,Bathinda,2016,Kharif,Rice,1034.1,32.3,59.8,Black,Tube Well,249.37,33.48,1454.58,6.4,33789.04,167480.0,0.7943586022587644
+6908,Karnataka,Belagavi,2023,Rabi,Rice,1160.67,34.3,70.1,Black,Canal,191.94,32.36,610.81,4.08,62314.78,44836.0,0.83990406259887
+2885,Uttarakhand,Dehradun,2018,Rabi,Rice,1195.96,30.2,53.5,Red,Canal,254.44,39.88,619.17,7.21,32125.95,72349.0,0.8667126875762065
+7175,West Bengal,Siliguri,2023,Zaid,Rice,1555.41,36.1,61.2,Red,Drip,174.71,44.52,1247.55,4.68,44232.51,58124.0,0.8829936550558395
+2251,Uttar Pradesh,Lucknow,2017,Rabi,Rice,992.56,31.1,61.9,Alluvial,Canal,169.73,36.91,2123.08,6.26,39333.39,184252.0,0.9331990285297551
+7767,Rajasthan,Jodhpur,2024,Rabi,Rice,1706.51,29.8,55.0,Sandy,Canal,236.07,33.28,2795.27,7.89,13907.01,192952.0,0.9342912989678968

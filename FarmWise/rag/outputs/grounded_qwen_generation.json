@@ -1,0 +1,137 @@
+{
+  "step": "10C.3",
+  "name": "Grounded Qwen Advisory Generation",
+  "timestamp": "2026-09-20T10:18:10.172920Z",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "device": "cuda",
+  "configuration": {
+    "top_k": 5,
+    "min_similarity": 0.5,
+    "max_new_tokens": 450
+  },
+  "production_advisory": {
+    "question": "What symptoms can brown planthopper cause in rice?",
+    "status": "VALIDATION_FAILED",
+    "block_reason": null,
+    "retrieved_evidence": [
+      {
+        "vector_id": 3,
+        "chunk_id": "FACT004_CHUNK001",
+        "document_id": "FACT004",
+        "source_id": "SRC002",
+        "pest_id": "P002",
+        "topic": "Damage symptoms",
+        "text": "Pest: P002\nTopic: Damage symptoms\nFact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper.",
+        "citation": "TNAU Crop Protection — Brown plant hopper.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html",
+        "geographic_scope": "India / rice production",
+        "last_verified": "2026-09-19",
+        "verification_status": "VERIFIED",
+        "similarity": 0.7454268932342529
+      },
+      {
+        "vector_id": 5,
+        "chunk_id": "FACT006_CHUNK001",
+        "document_id": "FACT006",
+        "source_id": "SRC003",
+        "pest_id": "P003",
+        "topic": "Damage symptoms",
+        "text": "Pest: P003\nTopic: Damage symptoms\nFact: White-backed planthopper nymphs and adults suck phloem sap and can cause reduced vigour, stunting, yellowing and hopper-burn symptoms in rice.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — White backed plant hopper.",
+        "citation": "TNAU Crop Protection — White backed plant hopper.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_WBPH.html",
+        "geographic_scope": "India / rice production",
+        "last_verified": "2026-09-19",
+        "verification_status": "VERIFIED",
+        "similarity": 0.6972274780273438
+      },
+      {
+        "vector_id": 7,
+        "chunk_id": "FACT008_CHUNK001",
+        "document_id": "FACT008",
+        "source_id": "SRC004",
+        "pest_id": "P004",
+        "topic": "Damage symptoms",
+        "text": "Pest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder.",
+        "citation": "TNAU Crop Protection — Leaf folder.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_lf.html",
+        "geographic_scope": "India / rice production",
+        "last_verified": "2026-09-19",
+        "verification_status": "VERIFIED",
+        "similarity": 0.6480539441108704
+      },
+      {
+        "vector_id": 16,
+        "chunk_id": "FACT017_CHUNK001",
+        "document_id": "FACT017",
+        "source_id": "SRC009",
+        "pest_id": "P009",
+        "topic": "Damage symptoms",
+        "text": "Pest: P009\nTopic: Damage symptoms\nFact: Rice thrips damage tender leaves by lacerating leaf tissue and sucking plant sap, producing yellowish or silvery streaks on young rice seedlings.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Thrips.",
+        "citation": "TNAU Crop Protection — Thrips.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_Thrips.html",
+        "geographic_scope": "India / rice production",
+        "last_verified": "2026-09-19",
+        "verification_status": "VERIFIED",
+        "similarity": 0.6166963577270508
+      },
+      {
+        "vector_id": 11,
+        "chunk_id": "FACT012_CHUNK001",
+        "document_id": "FACT012",
+        "source_id": "SRC006",
+        "pest_id": "P006",
+        "topic": "Damage symptoms",
+        "text": "Pest: P006\nTopic: Damage symptoms\nFact: Rice hispa adults scrape the green tissue of rice leaves while grubs mine within the leaf tissue, producing white streaks or translucent patches.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Rice Hispa.",
+        "citation": "TNAU Crop Protection — Rice Hispa.",
+        "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_ricehispa.html",
+        "geographic_scope": "India / rice production",
+        "last_verified": "2026-09-19",
+        "verification_status": "VERIFIED",
+        "similarity": 0.594973623752594
+      }
+    ],
+    "generated_answer": "RISK ASSESSMENT\nKEY OBSERVATIONS\n- Symptoms caused by brown planthoppers (P002) include yellowing, browning, and drying (\"hopper burn\") at the base of rice plants.\n- Similar symptoms may also occur with white-backed planthoppers (P003), which cause reduced vigor, stunting, yellowing, and hopper-burn symptoms.\n- The rice leaf-folder (P004) causes folded or rolled rice leaves and scraped green tissues, leading to a whitish scorched appearance.\n- Rice thrips (P009) damage tender leaves by lacerating leaf tissue and sucking plant sap, resulting in yellowish or silvery streaks on young rice seedlings.\n- Rice Hispa adults scrape green tissue while grubs mine within the leaf tissue, causing white streaks or translucent patches.\n\nRECOMMENDED ACTIONS\n- Monitor for signs of these pests in rice fields.\n- Implement integrated pest management practices such as crop rotation, use of resistant varieties, and biological control methods.\n- Regularly inspect crops for any visible symptoms of these pests.\n\nWHAT TO AVOID\n- Do not apply pesticides indiscriminately without proper identification of the pest.\n- Avoid overuse of chemical treatments, as this can lead to resistance development and environmental harm.\n- Ensure that all recommended actions are taken based on accurate information about the specific pest affecting the rice crop.\n\nEVIDENCE LIMITATIONS\nThe provided evidence includes multiple sources discussing different pests affecting rice, but it does not specify which symptom corresponds to each pest. Therefore, it is essential to identify the exact pest causing the observed symptoms before taking appropriate action.",
+    "parsed_advisory": {
+      "risk assessment": "",
+      "key observations": "Symptoms caused by brown planthoppers (P002) include yellowing, browning, and drying (\"hopper burn\") at the base of rice plants.\n- Similar symptoms may also occur with white-backed planthoppers (P003), which cause reduced vigor, stunting, yellowing, and hopper-burn symptoms.\n- The rice leaf-folder (P004) causes folded or rolled rice leaves and scraped green tissues, leading to a whitish scorched appearance.\n- Rice thrips (P009) damage tender leaves by lacerating leaf tissue and sucking plant sap, resulting in yellowish or silvery streaks on young rice seedlings.\n- Rice Hispa adults scrape green tissue while grubs mine within the leaf tissue, causing white streaks or translucent patches.",
+      "recommended actions": "Monitor for signs of these pests in rice fields.\n- Implement integrated pest management practices such as crop rotation, use of resistant varieties, and biological control methods.\n- Regularly inspect crops for any visible symptoms of these pests.",
+      "what to avoid": "Do not apply pesticides indiscriminately without proper identification of the pest.\n- Avoid overuse of chemical treatments, as this can lead to resistance development and environmental harm.\n- Ensure that all recommended actions are taken based on accurate information about the specific pest affecting the rice crop.",
+      "evidence limitations": "The provided evidence includes multiple",
+      "sources": "discussing different pests affecting rice, but it does not specify which symptom corresponds to each pest. Therefore, it is essential to identify the exact pest causing the observed symptoms before taking appropriate action."
+    },
+    "validation": {
+      "valid": false,
+      "checks": {
+        "section_risk_assessment": true,
+        "section_key_observations": true,
+        "section_recommended_actions": true,
+        "section_what_to_avoid": true,
+        "section_evidence_limitations": true,
+        "section_sources": true,
+        "no_dosage_prescription": true,
+        "no_treatment_prescription": true,
+        "source_reference_present": false,
+        "verified_evidence_present": true,
+        "no_prompt_leakage": true
+      },
+      "cited_source_count": 0,
+      "source_ids": [
+        "SRC002",
+        "SRC003",
+        "SRC004",
+        "SRC006",
+        "SRC009"
+      ]
+    }
+  },
+  "pipeline": [
+    "User question",
+    "Safety scope guard",
+    "FAISS semantic retrieval",
+    "Verified evidence filtering",
+    "Grounded Qwen generation",
+    "Output cleaning",
+    "Advisory parsing",
+    "Production validation"
+  ]
+}

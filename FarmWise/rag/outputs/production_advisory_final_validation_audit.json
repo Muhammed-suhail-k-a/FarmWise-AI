@@ -1,0 +1,18 @@
+{
+  "step": "10C.7",
+  "name": "Context-Aware Final Safety Validation",
+  "timestamp": "2026-09-20T10:25:15.441743+00:00",
+  "overall_status": "PASS",
+  "question": "What symptoms can brown planthopper cause in rice?",
+  "final_answer_length": 1721,
+  "source_trace_count": 5,
+  "removed_claim_count": 2,
+  "safety_pass": true,
+  "claim_grounding_pass": true,
+  "source_trace_pass": true,
+  "required_sections_pass": true,
+  "prompt_leakage_pass": true,
+  "dosage_matches": [],
+  "prescription_matches": [],
+  "output_file": "/content/drive/MyDrive/suhail/project/FarmWise/rag/outputs/production_advisory_final_validation.json"
+}
