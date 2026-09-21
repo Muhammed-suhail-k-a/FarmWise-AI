@@ -1,0 +1,441 @@
+{
+  "step": "10C.5",
+  "name": "True Claim-Level Grounding and Source Mapping",
+  "timestamp": "2026-09-20T10:21:59.816150+00:00",
+  "question": "What symptoms can brown planthopper cause in rice?",
+  "overall_status": "REVIEW_REQUIRED",
+  "metrics": {
+    "total_claims": 8,
+    "supported_claims": 7,
+    "strongly_supported_claims": 6,
+    "unsupported_claims": 1,
+    "grounding_rate": 0.875,
+    "evidence_count": 5,
+    "source_count": 5
+  },
+  "validation": {
+    "claim_extraction_working": true,
+    "claim_grounding_pass": false,
+    "evidence_available": true,
+    "source_trace_available": true,
+    "safety_pass": true
+  },
+  "claims": [
+    {
+      "claim_id": "CLAIM_001",
+      "section": "key_observations",
+      "claim": "Symptoms caused by brown planthoppers (P002) include yellowing, browning, and drying (\"hopper burn\") at the base of rice plants.",
+      "best_overlap": 0.7857,
+      "supported": true,
+      "strong_support": true,
+      "support_level": "STRONG",
+      "supporting_evidence": [
+        {
+          "chunk_id": "FACT004_CHUNK001",
+          "source_id": "SRC002",
+          "pest_id": "P002",
+          "topic": "Damage symptoms",
+          "similarity": 0.7454268932342529,
+          "overlap": 0.7857,
+          "evidence": "Pest: P002\nTopic: Damage symptoms\nFact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper."
+        },
+        {
+          "chunk_id": "FACT006_CHUNK001",
+          "source_id": "SRC003",
+          "pest_id": "P003",
+          "topic": "Damage symptoms",
+          "similarity": 0.6972274780273438,
+          "overlap": 0.3571,
+          "evidence": "Pest: P003\nTopic: Damage symptoms\nFact: White-backed planthopper nymphs and adults suck phloem sap and can cause reduced vigour, stunting, yellowing and hopper-burn symptoms in rice.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — White backed plant hopper."
+        },
+        {
+          "chunk_id": "FACT008_CHUNK001",
+          "source_id": "SRC004",
+          "pest_id": "P004",
+          "topic": "Damage symptoms",
+          "similarity": 0.6480539441108704,
+          "overlap": 0.1429,
+          "evidence": "Pest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder."
+        }
+      ]
+    },
+    {
+      "claim_id": "CLAIM_002",
+      "section": "key_observations",
+      "claim": "- Similar symptoms may also occur with white-backed planthoppers (P003), which cause reduced vigor, stunting, yellowing, and hopper-burn symptoms.",
+      "best_overlap": 0.7143,
+      "supported": true,
+      "strong_support": true,
+      "support_level": "STRONG",
+      "supporting_evidence": [
+        {
+          "chunk_id": "FACT006_CHUNK001",
+          "source_id": "SRC003",
+          "pest_id": "P003",
+          "topic": "Damage symptoms",
+          "similarity": 0.6972274780273438,
+          "overlap": 0.7143,
+          "evidence": "Pest: P003\nTopic: Damage symptoms\nFact: White-backed planthopper nymphs and adults suck phloem sap and can cause reduced vigour, stunting, yellowing and hopper-burn symptoms in rice.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — White backed plant hopper."
+        },
+        {
+          "chunk_id": "FACT004_CHUNK001",
+          "source_id": "SRC002",
+          "pest_id": "P002",
+          "topic": "Damage symptoms",
+          "similarity": 0.7454268932342529,
+          "overlap": 0.2857,
+          "evidence": "Pest: P002\nTopic: Damage symptoms\nFact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper."
+        },
+        {
+          "chunk_id": "FACT012_CHUNK001",
+          "source_id": "SRC006",
+          "pest_id": "P006",
+          "topic": "Damage symptoms",
+          "similarity": 0.594973623752594,
+          "overlap": 0.1429,
+          "evidence": "Pest: P006\nTopic: Damage symptoms\nFact: Rice hispa adults scrape the green tissue of rice leaves while grubs mine within the leaf tissue, producing white streaks or translucent patches.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Rice Hispa."
+        }
+      ]
+    },
+    {
+      "claim_id": "CLAIM_003",
+      "section": "key_observations",
+      "claim": "- The rice leaf-folder (P004) causes folded or rolled rice leaves and scraped green tissues, leading to a whitish scorched appearance.",
+      "best_overlap": 0.6667,
+      "supported": true,
+      "strong_support": true,
+      "support_level": "STRONG",
+      "supporting_evidence": [
+        {
+          "chunk_id": "FACT008_CHUNK001",
+          "source_id": "SRC004",
+          "pest_id": "P004",
+          "topic": "Damage symptoms",
+          "similarity": 0.6480539441108704,
+          "overlap": 0.6667,
+          "evidence": "Pest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder."
+        },
+        {
+          "chunk_id": "FACT012_CHUNK001",
+          "source_id": "SRC006",
+          "pest_id": "P006",
+          "topic": "Damage symptoms",
+          "similarity": 0.594973623752594,
+          "overlap": 0.2667,
+          "evidence": "Pest: P006\nTopic: Damage symptoms\nFact: Rice hispa adults scrape the green tissue of rice leaves while grubs mine within the leaf tissue, producing white streaks or translucent patches.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Rice Hispa."
+        },
+        {
+          "chunk_id": "FACT017_CHUNK001",
+          "source_id": "SRC009",
+          "pest_id": "P009",
+          "topic": "Damage symptoms",
+          "similarity": 0.6166963577270508,
+          "overlap": 0.2,
+          "evidence": "Pest: P009\nTopic: Damage symptoms\nFact: Rice thrips damage tender leaves by lacerating leaf tissue and sucking plant sap, producing yellowish or silvery streaks on young rice seedlings.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Thrips."
+        }
+      ]
+    },
+    {
+      "claim_id": "CLAIM_004",
+      "section": "key_observations",
+      "claim": "- Rice thrips (P009) damage tender leaves by lacerating leaf tissue and sucking plant sap, resulting in yellowish or silvery streaks on young rice seedlings.",
+      "best_overlap": 0.9444,
+      "supported": true,
+      "strong_support": true,
+      "support_level": "STRONG",
+      "supporting_evidence": [
+        {
+          "chunk_id": "FACT017_CHUNK001",
+          "source_id": "SRC009",
+          "pest_id": "P009",
+          "topic": "Damage symptoms",
+          "similarity": 0.6166963577270508,
+          "overlap": 0.9444,
+          "evidence": "Pest: P009\nTopic: Damage symptoms\nFact: Rice thrips damage tender leaves by lacerating leaf tissue and sucking plant sap, producing yellowish or silvery streaks on young rice seedlings.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Thrips."
+        },
+        {
+          "chunk_id": "FACT012_CHUNK001",
+          "source_id": "SRC006",
+          "pest_id": "P006",
+          "topic": "Damage symptoms",
+          "similarity": 0.594973623752594,
+          "overlap": 0.3333,
+          "evidence": "Pest: P006\nTopic: Damage symptoms\nFact: Rice hispa adults scrape the green tissue of rice leaves while grubs mine within the leaf tissue, producing white streaks or translucent patches.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Rice Hispa."
+        },
+        {
+          "chunk_id": "FACT004_CHUNK001",
+          "source_id": "SRC002",
+          "pest_id": "P002",
+          "topic": "Damage symptoms",
+          "similarity": 0.7454268932342529,
+          "overlap": 0.2222,
+          "evidence": "Pest: P002\nTopic: Damage symptoms\nFact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper."
+        }
+      ]
+    },
+    {
+      "claim_id": "CLAIM_005",
+      "section": "key_observations",
+      "claim": "- Rice Hispa adults scrape green tissue while grubs mine within the leaf tissue, causing white streaks or translucent patches.",
+      "best_overlap": 0.9375,
+      "supported": true,
+      "strong_support": true,
+      "support_level": "STRONG",
+      "supporting_evidence": [
+        {
+          "chunk_id": "FACT012_CHUNK001",
+          "source_id": "SRC006",
+          "pest_id": "P006",
+          "topic": "Damage symptoms",
+          "similarity": 0.594973623752594,
+          "overlap": 0.9375,
+          "evidence": "Pest: P006\nTopic: Damage symptoms\nFact: Rice hispa adults scrape the green tissue of rice leaves while grubs mine within the leaf tissue, producing white streaks or translucent patches.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Rice Hispa."
+        },
+        {
+          "chunk_id": "FACT008_CHUNK001",
+          "source_id": "SRC004",
+          "pest_id": "P004",
+          "topic": "Damage symptoms",
+          "similarity": 0.6480539441108704,
+          "overlap": 0.25,
+          "evidence": "Pest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder."
+        },
+        {
+          "chunk_id": "FACT017_CHUNK001",
+          "source_id": "SRC009",
+          "pest_id": "P009",
+          "topic": "Damage symptoms",
+          "similarity": 0.6166963577270508,
+          "overlap": 0.25,
+          "evidence": "Pest: P009\nTopic: Damage symptoms\nFact: Rice thrips damage tender leaves by lacerating leaf tissue and sucking plant sap, producing yellowish or silvery streaks on young rice seedlings.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Thrips."
+        }
+      ]
+    },
+    {
+      "claim_id": "CLAIM_006",
+      "section": "recommended_actions",
+      "claim": "Monitor for signs of these pests in rice fields.",
+      "best_overlap": 0.4,
+      "supported": true,
+      "strong_support": true,
+      "support_level": "STRONG",
+      "supporting_evidence": [
+        {
+          "chunk_id": "FACT008_CHUNK001",
+          "source_id": "SRC004",
+          "pest_id": "P004",
+          "topic": "Damage symptoms",
+          "similarity": 0.6480539441108704,
+          "overlap": 0.4,
+          "evidence": "Pest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder."
+        },
+        {
+          "chunk_id": "FACT004_CHUNK001",
+          "source_id": "SRC002",
+          "pest_id": "P002",
+          "topic": "Damage symptoms",
+          "similarity": 0.7454268932342529,
+          "overlap": 0.2,
+          "evidence": "Pest: P002\nTopic: Damage symptoms\nFact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper."
+        },
+        {
+          "chunk_id": "FACT006_CHUNK001",
+          "source_id": "SRC003",
+          "pest_id": "P003",
+          "topic": "Damage symptoms",
+          "similarity": 0.6972274780273438,
+          "overlap": 0.2,
+          "evidence": "Pest: P003\nTopic: Damage symptoms\nFact: White-backed planthopper nymphs and adults suck phloem sap and can cause reduced vigour, stunting, yellowing and hopper-burn symptoms in rice.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — White backed plant hopper."
+        }
+      ]
+    },
+    {
+      "claim_id": "CLAIM_007",
+      "section": "recommended_actions",
+      "claim": "- Implement integrated pest management practices such as crop rotation, use of resistant varieties, and biological control methods.",
+      "best_overlap": 0.1538,
+      "supported": true,
+      "strong_support": false,
+      "support_level": "SUPPORTED",
+      "supporting_evidence": [
+        {
+          "chunk_id": "FACT004_CHUNK001",
+          "source_id": "SRC002",
+          "pest_id": "P002",
+          "topic": "Damage symptoms",
+          "similarity": 0.7454268932342529,
+          "overlap": 0.1538,
+          "evidence": "Pest: P002\nTopic: Damage symptoms\nFact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper."
+        },
+        {
+          "chunk_id": "FACT006_CHUNK001",
+          "source_id": "SRC003",
+          "pest_id": "P003",
+          "topic": "Damage symptoms",
+          "similarity": 0.6972274780273438,
+          "overlap": 0.1538,
+          "evidence": "Pest: P003\nTopic: Damage symptoms\nFact: White-backed planthopper nymphs and adults suck phloem sap and can cause reduced vigour, stunting, yellowing and hopper-burn symptoms in rice.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — White backed plant hopper."
+        },
+        {
+          "chunk_id": "FACT008_CHUNK001",
+          "source_id": "SRC004",
+          "pest_id": "P004",
+          "topic": "Damage symptoms",
+          "similarity": 0.6480539441108704,
+          "overlap": 0.1538,
+          "evidence": "Pest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder."
+        }
+      ]
+    },
+    {
+      "claim_id": "CLAIM_008",
+      "section": "recommended_actions",
+      "claim": "- Regularly inspect crops for any visible symptoms of these pests.",
+      "best_overlap": 0.1429,
+      "supported": false,
+      "strong_support": false,
+      "support_level": "UNSUPPORTED",
+      "supporting_evidence": [
+        {
+          "chunk_id": "FACT004_CHUNK001",
+          "source_id": "SRC002",
+          "pest_id": "P002",
+          "topic": "Damage symptoms",
+          "similarity": 0.7454268932342529,
+          "overlap": 0.1429,
+          "evidence": "Pest: P002\nTopic: Damage symptoms\nFact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper."
+        },
+        {
+          "chunk_id": "FACT006_CHUNK001",
+          "source_id": "SRC003",
+          "pest_id": "P003",
+          "topic": "Damage symptoms",
+          "similarity": 0.6972274780273438,
+          "overlap": 0.1429,
+          "evidence": "Pest: P003\nTopic: Damage symptoms\nFact: White-backed planthopper nymphs and adults suck phloem sap and can cause reduced vigour, stunting, yellowing and hopper-burn symptoms in rice.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — White backed plant hopper."
+        },
+        {
+          "chunk_id": "FACT008_CHUNK001",
+          "source_id": "SRC004",
+          "pest_id": "P004",
+          "topic": "Damage symptoms",
+          "similarity": 0.6480539441108704,
+          "overlap": 0.1429,
+          "evidence": "Pest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder."
+        }
+      ]
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim_id": "CLAIM_008",
+      "section": "recommended_actions",
+      "claim": "- Regularly inspect crops for any visible symptoms of these pests.",
+      "best_overlap": 0.1429
+    }
+  ],
+  "source_coverage": {
+    "SRC002": {
+      "source_id": "SRC002",
+      "claim_ids": [
+        "CLAIM_001",
+        "CLAIM_002",
+        "CLAIM_004",
+        "CLAIM_006",
+        "CLAIM_007"
+      ],
+      "claim_count": 5
+    },
+    "SRC003": {
+      "source_id": "SRC003",
+      "claim_ids": [
+        "CLAIM_001",
+        "CLAIM_002",
+        "CLAIM_006",
+        "CLAIM_007"
+      ],
+      "claim_count": 4
+    },
+    "SRC004": {
+      "source_id": "SRC004",
+      "claim_ids": [
+        "CLAIM_001",
+        "CLAIM_003",
+        "CLAIM_005",
+        "CLAIM_006",
+        "CLAIM_007"
+      ],
+      "claim_count": 5
+    },
+    "SRC006": {
+      "source_id": "SRC006",
+      "claim_ids": [
+        "CLAIM_002",
+        "CLAIM_003",
+        "CLAIM_004",
+        "CLAIM_005"
+      ],
+      "claim_count": 4
+    },
+    "SRC009": {
+      "source_id": "SRC009",
+      "claim_ids": [
+        "CLAIM_003",
+        "CLAIM_004",
+        "CLAIM_005"
+      ],
+      "claim_count": 3
+    }
+  },
+  "source_trace": [
+    {
+      "chunk_id": "FACT004_CHUNK001",
+      "source_id": "SRC002",
+      "pest_id": "P002",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — Brown plant hopper.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html",
+      "similarity": 0.7454268932342529
+    },
+    {
+      "chunk_id": "FACT006_CHUNK001",
+      "source_id": "SRC003",
+      "pest_id": "P003",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — White backed plant hopper.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_WBPH.html",
+      "similarity": 0.6972274780273438
+    },
+    {
+      "chunk_id": "FACT008_CHUNK001",
+      "source_id": "SRC004",
+      "pest_id": "P004",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — Leaf folder.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_lf.html",
+      "similarity": 0.6480539441108704
+    },
+    {
+      "chunk_id": "FACT017_CHUNK001",
+      "source_id": "SRC009",
+      "pest_id": "P009",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — Thrips.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_Thrips.html",
+      "similarity": 0.6166963577270508
+    },
+    {
+      "chunk_id": "FACT012_CHUNK001",
+      "source_id": "SRC006",
+      "pest_id": "P006",
+      "topic": "Damage symptoms",
+      "citation": "TNAU Crop Protection — Rice Hispa.",
+      "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_ricehispa.html",
+      "similarity": 0.594973623752594
+    }
+  ],
+  "safety": {
+    "pass": true,
+    "unsafe_matches": []
+  }
+}

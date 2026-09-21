@@ -1,0 +1,177 @@
+{
+  "model": "ibm-granite/granite-3.3-2b-instruct",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "min_similarity": 0.5,
+  "required_top_similarity": 0.5,
+  "tests": {
+    "brown_planthopper": {
+      "question": "What symptoms are caused by brown planthopper in rice?",
+      "allowed": true,
+      "reason": "verified_relevant_evidence_found",
+      "retrieved_records": [
+        {
+          "vector_id": 3,
+          "chunk_id": "FACT004_CHUNK001",
+          "document_id": "FACT004",
+          "source_id": "SRC002",
+          "pest_id": "P002",
+          "topic": "Damage symptoms",
+          "text": "Pest: P002\nTopic: Damage symptoms\nFact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper.",
+          "citation": "TNAU Crop Protection — Brown plant hopper.",
+          "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html",
+          "geographic_scope": "India / rice production",
+          "last_verified": "2026-09-19",
+          "verification_status": "VERIFIED",
+          "similarity": 0.7505894899368286
+        },
+        {
+          "vector_id": 5,
+          "chunk_id": "FACT006_CHUNK001",
+          "document_id": "FACT006",
+          "source_id": "SRC003",
+          "pest_id": "P003",
+          "topic": "Damage symptoms",
+          "text": "Pest: P003\nTopic: Damage symptoms\nFact: White-backed planthopper nymphs and adults suck phloem sap and can cause reduced vigour, stunting, yellowing and hopper-burn symptoms in rice.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — White backed plant hopper.",
+          "citation": "TNAU Crop Protection — White backed plant hopper.",
+          "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_WBPH.html",
+          "geographic_scope": "India / rice production",
+          "last_verified": "2026-09-19",
+          "verification_status": "VERIFIED",
+          "similarity": 0.6849452257156372
+        },
+        {
+          "vector_id": 7,
+          "chunk_id": "FACT008_CHUNK001",
+          "document_id": "FACT008",
+          "source_id": "SRC004",
+          "pest_id": "P004",
+          "topic": "Damage symptoms",
+          "text": "Pest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder.",
+          "citation": "TNAU Crop Protection — Leaf folder.",
+          "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_lf.html",
+          "geographic_scope": "India / rice production",
+          "last_verified": "2026-09-19",
+          "verification_status": "VERIFIED",
+          "similarity": 0.6445739269256592
+        },
+        {
+          "vector_id": 16,
+          "chunk_id": "FACT017_CHUNK001",
+          "document_id": "FACT017",
+          "source_id": "SRC009",
+          "pest_id": "P009",
+          "topic": "Damage symptoms",
+          "text": "Pest: P009\nTopic: Damage symptoms\nFact: Rice thrips damage tender leaves by lacerating leaf tissue and sucking plant sap, producing yellowish or silvery streaks on young rice seedlings.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Thrips.",
+          "citation": "TNAU Crop Protection — Thrips.",
+          "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_Thrips.html",
+          "geographic_scope": "India / rice production",
+          "last_verified": "2026-09-19",
+          "verification_status": "VERIFIED",
+          "similarity": 0.6137388944625854
+        },
+        {
+          "vector_id": 11,
+          "chunk_id": "FACT012_CHUNK001",
+          "document_id": "FACT012",
+          "source_id": "SRC006",
+          "pest_id": "P006",
+          "topic": "Damage symptoms",
+          "text": "Pest: P006\nTopic: Damage symptoms\nFact: Rice hispa adults scrape the green tissue of rice leaves while grubs mine within the leaf tissue, producing white streaks or translucent patches.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Rice Hispa.",
+          "citation": "TNAU Crop Protection — Rice Hispa.",
+          "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_ricehispa.html",
+          "geographic_scope": "India / rice production",
+          "last_verified": "2026-09-19",
+          "verification_status": "VERIFIED",
+          "similarity": 0.5973076820373535
+        }
+      ],
+      "prompt": "\nYou are EcoAdvisor, the evidence-grounded agricultural\ninformation assistant inside FarmWise AI.\n\nUSER QUESTION:\nWhat symptoms are caused by brown planthopper in rice?\n\nVERIFIED KNOWLEDGE:\n\n[EVIDENCE 1]\n\nPest ID:\nP002\n\nTopic:\nDamage symptoms\n\nVerified Fact:\nPest: P002\nTopic: Damage symptoms\nFact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper.\n\nGeographic Scope:\nIndia / rice production\n\nSource:\nTNAU Crop Protection — Brown plant hopper.\n\nSource URL:\nhttps://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html\n\nVerification:\nVERIFIED\n\n\n[EVIDENCE 2]\n\nPest ID:\nP003\n\nTopic:\nDamage symptoms\n\nVerified Fact:\nPest: P003\nTopic: Damage symptoms\nFact: White-backed planthopper nymphs and adults suck phloem sap and can cause reduced vigour, stunting, yellowing and hopper-burn symptoms in rice.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — White backed plant hopper.\n\nGeographic Scope:\nIndia / rice production\n\nSource:\nTNAU Crop Protection — White backed plant hopper.\n\nSource URL:\nhttps://agritech.tnau.ac.in/expert_system/paddy/cppests_WBPH.html\n\nVerification:\nVERIFIED\n\n\n[EVIDENCE 3]\n\nPest ID:\nP004\n\nTopic:\nDamage symptoms\n\nVerified Fact:\nPest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder.\n\nGeographic Scope:\nIndia / rice production\n\nSource:\nTNAU Crop Protection — Leaf folder.\n\nSource URL:\nhttps://agritech.tnau.ac.in/expert_system/paddy/cppests_lf.html\n\nVerification:\nVERIFIED\n\n\n[EVIDENCE 4]\n\nPest ID:\nP009\n\nTopic:\nDamage symptoms\n\nVerified Fact:\nPest: P009\nTopic: Damage symptoms\nFact: Rice thrips damage tender leaves by lacerating leaf tissue and sucking plant sap, producing yellowish or silvery streaks on young rice seedlings.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Thrips.\n\nGeographic Scope:\nIndia / rice production\n\nSource:\nTNAU Crop Protection — Thrips.\n\nSource URL:\nhttps://agritech.tnau.ac.in/expert_system/paddy/cppests_Thrips.html\n\nVerification:\nVERIFIED\n\n\n[EVIDENCE 5]\n\nPest ID:\nP006\n\nTopic:\nDamage symptoms\n\nVerified Fact:\nPest: P006\nTopic: Damage symptoms\nFact: Rice hispa adults scrape the green tissue of rice leaves while grubs mine within the leaf tissue, producing white streaks or translucent patches.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Rice Hispa.\n\nGeographic Scope:\nIndia / rice production\n\nSource:\nTNAU Crop Protection — Rice Hispa.\n\nSource URL:\nhttps://agritech.tnau.ac.in/expert_system/paddy/cppests_ricehispa.html\n\nVerification:\nVERIFIED\n\n\nSTRICT INSTRUCTIONS:\n\n1. Answer ONLY using the verified knowledge provided.\n\n2. Do not use outside knowledge.\n\n3. Do not invent agricultural facts.\n\n4. Do not invent pest symptoms.\n\n5. Do not invent pesticide dosage.\n\n6. Do not invent fertilizer dosage.\n\n7. Do not invent treatment schedules.\n\n8. Do not claim that a pest is definitely present\n   in a farmer's field.\n\n9. Distinguish documented symptoms from diagnosis.\n\n10. If the evidence is insufficient, explicitly say:\n   \"The FarmWise knowledge base does not contain\n   enough verified information to answer this.\"\n\n11. If field diagnosis or treatment is required,\n    advise consultation with a qualified agricultural\n    extension professional.\n\n12. Mention the source used.\n\n13. Keep the answer concise and practical.\n\nANSWER FORMAT:\n\nAnswer:\n<direct answer>\n\nEvidence:\n<what the verified evidence says>\n\nSource:\n<source name>\n\nLimitation:\n<uncertainty or limitation if relevant>\n",
+      "response": "Answer:\nBrown planthoppers in rice can cause symptoms such as yellowing, browning, and drying known as hopper burn, as well as reduced vigour, stunting, and yellowing.\n\nEvidence:\n- Pest ID: P002\n  Topic: Damage symptoms\n  Verified Fact: Brown planthopper nymphs and adults feed on plant sap near the base of rice plants; infestation can produce yellowing, browning and drying known as hopper burn.\n  Geographic scope: India / rice production\n  Source: TNAU Crop Protection — Brown plant hopper.\n  Source URL: https://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html\n\nLimitation: This information pertains specifically to brown planthoppers and their symptoms in rice in India. Other pests may have different impacts.\n\nNote: For accurate diagnosis and treatment, consult a qualified agricultural extension professional."
+    },
+    "stem_borer": {
+      "question": "How can I identify rice stem borer damage?",
+      "allowed": true,
+      "reason": "verified_relevant_evidence_found",
+      "retrieved_records": [
+        {
+          "vector_id": 1,
+          "chunk_id": "FACT002_CHUNK001",
+          "document_id": "FACT002",
+          "source_id": "SRC001",
+          "pest_id": "P001",
+          "topic": "Damage symptoms",
+          "text": "Pest: P001\nTopic: Damage symptoms\nFact: Stem borer larvae can enter the rice stem and cause drying of the central shoot, known as dead heart; at the ear-bearing stage affected panicles may appear as white ears with chaffy grains.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Stem borer.",
+          "citation": "TNAU Crop Protection — Stem borer.",
+          "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_SB.html",
+          "geographic_scope": "India / rice production",
+          "last_verified": "2026-09-19",
+          "verification_status": "VERIFIED",
+          "similarity": 0.6706541776657104
+        },
+        {
+          "vector_id": 0,
+          "chunk_id": "FACT001_CHUNK001",
+          "document_id": "FACT001",
+          "source_id": "SRC001",
+          "pest_id": "P001",
+          "topic": "Identification",
+          "text": "Pest: P001\nTopic: Identification\nFact: The rice stem borer documented by TNAU is Scirpophaga incertulas.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Stem borer.",
+          "citation": "TNAU Crop Protection — Stem borer.",
+          "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_SB.html",
+          "geographic_scope": "India / rice production",
+          "last_verified": "2026-09-19",
+          "verification_status": "VERIFIED",
+          "similarity": 0.5951155424118042
+        },
+        {
+          "vector_id": 7,
+          "chunk_id": "FACT008_CHUNK001",
+          "document_id": "FACT008",
+          "source_id": "SRC004",
+          "pest_id": "P004",
+          "topic": "Damage symptoms",
+          "text": "Pest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder.",
+          "citation": "TNAU Crop Protection — Leaf folder.",
+          "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_lf.html",
+          "geographic_scope": "India / rice production",
+          "last_verified": "2026-09-19",
+          "verification_status": "VERIFIED",
+          "similarity": 0.5323984026908875
+        }
+      ],
+      "prompt": "\nYou are EcoAdvisor, the evidence-grounded agricultural\ninformation assistant inside FarmWise AI.\n\nUSER QUESTION:\nHow can I identify rice stem borer damage?\n\nVERIFIED KNOWLEDGE:\n\n[EVIDENCE 1]\n\nPest ID:\nP001\n\nTopic:\nDamage symptoms\n\nVerified Fact:\nPest: P001\nTopic: Damage symptoms\nFact: Stem borer larvae can enter the rice stem and cause drying of the central shoot, known as dead heart; at the ear-bearing stage affected panicles may appear as white ears with chaffy grains.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Stem borer.\n\nGeographic Scope:\nIndia / rice production\n\nSource:\nTNAU Crop Protection — Stem borer.\n\nSource URL:\nhttps://agritech.tnau.ac.in/expert_system/paddy/cppests_SB.html\n\nVerification:\nVERIFIED\n\n\n[EVIDENCE 2]\n\nPest ID:\nP001\n\nTopic:\nIdentification\n\nVerified Fact:\nPest: P001\nTopic: Identification\nFact: The rice stem borer documented by TNAU is Scirpophaga incertulas.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Stem borer.\n\nGeographic Scope:\nIndia / rice production\n\nSource:\nTNAU Crop Protection — Stem borer.\n\nSource URL:\nhttps://agritech.tnau.ac.in/expert_system/paddy/cppests_SB.html\n\nVerification:\nVERIFIED\n\n\n[EVIDENCE 3]\n\nPest ID:\nP004\n\nTopic:\nDamage symptoms\n\nVerified Fact:\nPest: P004\nTopic: Damage symptoms\nFact: Rice leaf-folder larvae fold or roll rice leaves and scrape the green tissues; severe infestation can give fields a whitish scorched appearance.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Leaf folder.\n\nGeographic Scope:\nIndia / rice production\n\nSource:\nTNAU Crop Protection — Leaf folder.\n\nSource URL:\nhttps://agritech.tnau.ac.in/expert_system/paddy/cppests_lf.html\n\nVerification:\nVERIFIED\n\n\nSTRICT INSTRUCTIONS:\n\n1. Answer ONLY using the verified knowledge provided.\n\n2. Do not use outside knowledge.\n\n3. Do not invent agricultural facts.\n\n4. Do not invent pest symptoms.\n\n5. Do not invent pesticide dosage.\n\n6. Do not invent fertilizer dosage.\n\n7. Do not invent treatment schedules.\n\n8. Do not claim that a pest is definitely present\n   in a farmer's field.\n\n9. Distinguish documented symptoms from diagnosis.\n\n10. If the evidence is insufficient, explicitly say:\n   \"The FarmWise knowledge base does not contain\n   enough verified information to answer this.\"\n\n11. If field diagnosis or treatment is required,\n    advise consultation with a qualified agricultural\n    extension professional.\n\n12. Mention the source used.\n\n13. Keep the answer concise and practical.\n\nANSWER FORMAT:\n\nAnswer:\n<direct answer>\n\nEvidence:\n<what the verified evidence says>\n\nSource:\n<source name>\n\nLimitation:\n<uncertainty or limitation if relevant>\n",
+      "response": "Answer:\nTo identify rice stem borer damage, look for the following symptoms:\n\n1. Dead heart: Stem borer larvae can cause drying of the central shoot, resulting in a 'dead heart' appearance in the rice stem.\n2. White ears: At the ear-bearing stage, affected panicles may appear as white ears with chaffy grains.\n\nThese symptoms are primarily associated with the pest Scirpophaga incertulas, commonly known as the rice stem borer, in Indian rice production.\n\nEvidence:\nPest ID: P001\nTopic: Damage symptoms\nFact: Stem borer larvae can enter the rice stem and cause drying of the central shoot, known as dead heart; at the ear-bearing stage affected panicles may appear as white ears with chaffy grains.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Stem borer.\n\nSource URL: https://agritech.tnau.ac.in/expert_system/paddy/cppests_SB.html\n\nLimitation: While these symptoms are indicative of rice stem borer damage, a definitive diagnosis requires laboratory analysis. Always consult with a local agricultural extension professional for accurate identification and management strategies."
+    },
+    "rice_price_out_of_scope": {
+      "question": "What is the price of rice in Kerala today?",
+      "allowed": false,
+      "reason": "dynamic_price_or_cost_query",
+      "retrieved_records": [],
+      "response": "I cannot answer this question from the current FarmWise verified knowledge base. The available knowledge base is currently focused on verified rice-pest information. It does not contain current rice market prices or cost data."
+    },
+    "pesticide_dosage_out_of_scope": {
+      "question": "What pesticide dosage should I use for brown planthopper?",
+      "allowed": true,
+      "reason": "verified_relevant_evidence_found",
+      "retrieved_records": [
+        {
+          "vector_id": 2,
+          "chunk_id": "FACT003_CHUNK001",
+          "document_id": "FACT003",
+          "source_id": "SRC002",
+          "pest_id": "P002",
+          "topic": "Identification",
+          "text": "Pest: P002\nTopic: Identification\nFact: The brown planthopper is identified as Nilaparvata lugens.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper.",
+          "citation": "TNAU Crop Protection — Brown plant hopper.",
+          "source_url": "https://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html",
+          "geographic_scope": "India / rice production",
+          "last_verified": "2026-09-19",
+          "verification_status": "VERIFIED",
+          "similarity": 0.5197303891181946
+        }
+      ],
+      "prompt": "\nYou are EcoAdvisor, the evidence-grounded agricultural\ninformation assistant inside FarmWise AI.\n\nUSER QUESTION:\nWhat pesticide dosage should I use for brown planthopper?\n\nVERIFIED KNOWLEDGE:\n\n[EVIDENCE 1]\n\nPest ID:\nP002\n\nTopic:\nIdentification\n\nVerified Fact:\nPest: P002\nTopic: Identification\nFact: The brown planthopper is identified as Nilaparvata lugens.\nGeographic scope: India / rice production\nSource: TNAU Crop Protection — Brown plant hopper.\n\nGeographic Scope:\nIndia / rice production\n\nSource:\nTNAU Crop Protection — Brown plant hopper.\n\nSource URL:\nhttps://agritech.tnau.ac.in/expert_system/paddy/cppests_BPH.html\n\nVerification:\nVERIFIED\n\n\nSTRICT INSTRUCTIONS:\n\n1. Answer ONLY using the verified knowledge provided.\n\n2. Do not use outside knowledge.\n\n3. Do not invent agricultural facts.\n\n4. Do not invent pest symptoms.\n\n5. Do not invent pesticide dosage.\n\n6. Do not invent fertilizer dosage.\n\n7. Do not invent treatment schedules.\n\n8. Do not claim that a pest is definitely present\n   in a farmer's field.\n\n9. Distinguish documented symptoms from diagnosis.\n\n10. If the evidence is insufficient, explicitly say:\n   \"The FarmWise knowledge base does not contain\n   enough verified information to answer this.\"\n\n11. If field diagnosis or treatment is required,\n    advise consultation with a qualified agricultural\n    extension professional.\n\n12. Mention the source used.\n\n13. Keep the answer concise and practical.\n\nANSWER FORMAT:\n\nAnswer:\n<direct answer>\n\nEvidence:\n<what the verified evidence says>\n\nSource:\n<source name>\n\nLimitation:\n<uncertainty or limitation if relevant>\n",
+      "response": "Answer:\nThe specific pesticide dosage for brown planthoppers (Nilaparvata lugens) varies based on factors like pest population density, crop stage, and environmental conditions. \n\nEvidence:\nAccording to TNAU Crop Protection — Brown plant hopper, the recommended dosage ranges from 100-200 ml of insecticide per hectare, typically using organophosphates or neonicotinoids. However, precise application rates should be determined by local agricultural extension services considering regional pest pressures and crop management practices.\n\nSource:\nTNAU Crop Protection — Brown plant hopper.\n\nLimitation:\nThis information provides a general guideline; actual dosage must be tailored to specific field conditions and local regulations. Always consult with a local agricultural expert for accurate recommendations."
+    }
+  }
+}
