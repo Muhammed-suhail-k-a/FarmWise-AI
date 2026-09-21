@@ -24,7 +24,9 @@ st.set_page_config(
 # PATHS (unchanged)
 # ================================================================
 
-BASE_DIR = "/content/drive/MyDrive/suhail/project/FarmWise"
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 DATA_PATH = os.path.join(BASE_DIR, "india_rainfall_crop_yield_2014_2024.csv")
 MODEL_PATH = os.path.join(BASE_DIR, "models", "farmwise_yieldwise_gradient_boosting.joblib")
